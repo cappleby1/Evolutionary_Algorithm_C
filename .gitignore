@@ -30,3 +30,17 @@
 *.exe
 *.out
 *.app
+/main
+.idea/editor.xml
+.idea/Evolutionary_Algorithm_C.iml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/modules.xml
+.idea/vcs.xml
+*.xml
+.idea/editor.xml
+.idea/Evolutionary_Algorithm_C.iml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/modules.xml
+.idea/vcs.xml
+*.plist
+*.xml
