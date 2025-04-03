@@ -44,7 +44,7 @@ void menu(){
   else
   {
     cout << "Invalid image! Please try again!" << endl;
-    menu();
+    main();
   }
   target = stbi_load(image_path, &width, &height, &channels, 0);
 
