@@ -13,7 +13,6 @@ void menu();
 
 // Variables
 int POLYGON_COUNT, generations, pop_size;
-int target_width, target_height, target_channels;
 long seed;
 int MAX = 255 * 200 * 200;
 string image;
