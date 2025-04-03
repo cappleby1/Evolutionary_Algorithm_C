@@ -1,7 +1,5 @@
-#define STB_IMAGE_IMPLEMENTATION
-
-#include "stb_image.h"
 #include "main.h"
+#include "image_handling.h"
 
 // Create main menu
 void menu(){
@@ -46,7 +44,7 @@ void menu(){
     cout << "Invalid image! Please try again!" << endl;
     main();
   }
-  target = stbi_load(image_path, &width, &height, &channels, 0);
+  target = load_image(image_path, target_width, target_height, target_channels);
 
 }
 

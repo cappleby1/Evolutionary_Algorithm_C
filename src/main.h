@@ -12,12 +12,11 @@ using namespace std;
 void menu();
 
 // Variables
-int POLYGON_COUNT, width, height, channels, generations, pop_size;
+int POLYGON_COUNT, generations, pop_size;
+int target_width, target_height, target_channels;
 long seed;
 int MAX = 255 * 200 * 200;
 string image;
 string seed_option;
-const char* image_path;
-unsigned char* target;
 
 #endif //MAIN_H
