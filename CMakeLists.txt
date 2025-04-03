@@ -19,6 +19,7 @@ FetchContent_Declare(
  )
 
 FetchContent_MakeAvailable(OpenGA stb)
+message(STATUS "OpenGA & stb fetch and build completed!")
 
 # Assume OpenGA's header files are under OpenGA/include
 include_directories(${OpenGA_SOURCE_DIR}/include)
@@ -37,9 +38,6 @@ file(GLOB HEADERS "src/*.h")
 
 # Add executable
 add_executable(Evolutionary_Algorithm ${SOURCES} ${HEADERS})
-
-message(STATUS "OpenGA source: ${OpenGA_SOURCE_DIR}")
-message(STATUS "OpenGA binary: ${OpenGA_BINARY_DIR}")
 
 target_include_directories(Evolutionary_Algorithm PRIVATE ${stb_SOURCE_DIR})
 target_include_directories(Evolutionary_Algorithm PRIVATE ${OpenGA_SOURCE_DIR})
