@@ -9,14 +9,13 @@
 #include <iostream>
 
 // Variables
-const char* image_path; 
-unsigned char* target_image_data;
-unsigned char* target;
-int target_width, target_height, target_channels;  
+extern const char* image_path; 
+extern unsigned char* target;
+extern int target_width, target_height, target_channels;  
 
-const int IMAGE_WIDTH = 256;
-const int IMAGE_HEIGHT = 256;
-const int NUM_CHANNELS = 3;
+extern const int IMAGE_WIDTH = 256;
+extern const int IMAGE_HEIGHT = 256;
+extern const int NUM_CHANNELS = 3;
 
 //Functions
 void load_image(const char* image_path, int& width, int& height, int& channels, unsigned char*& image_data);
