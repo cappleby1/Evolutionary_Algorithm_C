@@ -31,15 +31,15 @@ void menu(){
  // Set target image
   if (image == "8a.png")
   {
-    image_path = "8a.png";
+    image_path = "..\Images\8a.png";
   }
   else if (image == "8b.png")
   {
-    image_path = "8b.png";
+    image_path = "..\Images\8b.png";
   }
   else if (image == "8c.png")
   {
-    image_path = "8c.png";
+    image_path = "..\Images\8c.png";
   }
   else
   {
