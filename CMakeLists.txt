@@ -3,6 +3,16 @@ project(Evolutionary_Algorithm)
 
 set(CMAKE_CXX_STANDARD 17)
 
+if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
+    message(STATUS "Compiling on Windows")
+    set(CMAKE_C_COMPILER "cl")       # Use MSVC
+    set(CMAKE_CXX_COMPILER "cl")
+elseif(CMAKE_SYSTEM_NAME STREQUAL "Darwin")
+    message(STATUS "Compiling on macOS")
+    set(CMAKE_C_COMPILER "/usr/bin/clang")      # Use Clang on macOS
+    set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
+endif()
+
 # FetchContent for OpenGA from GitHub
 include(FetchContent)
 
